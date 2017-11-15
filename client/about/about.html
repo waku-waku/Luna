@@ -1,0 +1,41 @@
+<ion-side-menus>
+
+	<!-- センターエリア -->
+	<ion-pane ion-side-menu-content>
+
+		<!-- ion-nav-bar は各ion-view側で上書きすることもできる -->
+		<ion-nav-bar class="bar-dark">
+			<ion-nav-back-button class="button-clear">
+				<i class="icon ion-chevron-left"></i> back
+			</ion-nav-back-button>
+		</ion-nav-bar>
+
+		<!-- 各テンプレート埋め込み -->
+		<ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+	</ion-pane>
+
+	<!-- 左メニュー -->
+	<ion-side-menu side="left">
+	  <!-- ion-pane には style 属性が使える。ページ全体の定義はそこで -->
+	  <ion-pane style="background-color: #262626">
+	    <div class="button-bar">
+	      <a class="button button-clear button-stable button-large" menu-close ui-sref="main.top">
+	        <div align="left">
+	          <i class="ion-home"></i> HOME
+	        </div>
+	      </a>
+	    </div>
+	    <div class="button-bar">
+	      <a class="button button-clear button-stable button-large" menu-toggle="right">
+	        <div align="left">
+	          <i class="ion-help-circled"></i> ログイン
+	        </div>
+	      </a>
+	    </div>
+	  </ion-pane>
+	</ion-side-menu>
+
+	<!-- 右メニュー -->
+	
+
+</ion-side-menus>

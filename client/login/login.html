@@ -1,0 +1,15 @@
+<ion-view>
+	<ion-pane>
+		<div id="login">
+			<div class="login-box">
+				<p class="login-title">Login</p>
+				<form name="loginForm" ng-submit="login()">
+					<input type="text" ng-model="user.username" placeholder="username">
+					<input type="password" ng-model="user.password" placeholder="password">
+					<input type="submit" value="login">
+				</form>
+				<a ui-sref="home.signup">新規登録はこちら</a>
+			</div>
+		</div>
+	</ion-pane>
+</ion-view>

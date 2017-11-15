@@ -1,0 +1,42 @@
+<ion-view title="" hide-nav-bar="true" hide-back-button="true">
+	<!-- back buttonは現状いらない -->
+	<ion-pane>
+
+		<!-- header -->
+		<ion-header-bar class="bar-energized rol">
+			<div class="col col-20" align="left" style="font-size: 30px" menu-toggle="left">
+        <i class="ion-navicon-round"></i>
+      </div>
+			<h1 class="title"><a href="/" style="text-decoration: none;">Drone News</a></h1>        
+			<div class="col col-20" align="right" style="font-size: 30px;     position: absolute;
+    right: 1px;" menu-toggle="right">
+        <i class="ion-ios-star-outline"></i>
+      </div>
+		</ion-header-bar>
+
+		<!-- main content -->
+		<ion-content>
+			
+			<!-- <a href="#">{{ datas.username }}</a> -->
+
+			<ion-list show-delete="data.showDelete">
+				<ion-item ng-repeat="item in items"
+									can-swipe="false"
+									class="item-thumbnail-left">
+					<img ng-src="{{item.image}}">
+					<p>
+						{{item.title}}
+					</p>
+					<h5>{{item.publishedDate}}</h5>
+					<p align="right">
+						<a class="button button-balanced button-small" ng-href="{{item.link}}" target="_blank">
+							detail
+						</a>
+					</p>
+				</ion-item>
+			</ion-list>
+
+
+		</ion-content>
+	</ion-pane>
+</ion-view>

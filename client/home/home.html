@@ -1,0 +1,52 @@
+<ion-side-menus>
+	
+	<!-- センターエリア -->
+	<ion-pane ion-side-menu-content>
+
+		<!-- ログインやサインアップはヘッダーいらないので標準のヘッダはない -->
+
+		<!-- 各テンプレート埋め込み -->
+		<ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+	</ion-pane>
+
+	<!-- 左メニュー -->
+	<ion-side-menu side="left">
+	  <!-- ion-pane には style 属性が使える。ページ全体の定義はそこで -->
+	  <ion-pane style="background-color: #262626">
+
+	  	<ion-header-bar class="bar-dark rol">
+			<h1 class="title" style="font-size: 21px;">ようこそ {{ username}}さん</h1>
+		</ion-header-bar>
+	    <ion-content>
+	    	<div class="button-bar">
+		      <a class="button button-clear button-stable button-large" menu-close ui-sref="home.top">
+		        <div align="left">
+		          <i class="ion-home"></i> HOME
+		        </div>
+		      </a>
+		    </div>
+		    <div class="button-bar">
+		      <a class="button button-clear button-stable button-large" menu-close ui-sref="home.login">
+		        <div align="left">
+		          <i class="ion-help-circled"></i> ログイン
+		        </div>
+		      </a>
+		    </div>
+	    </ion-content>
+	  </ion-pane>
+	</ion-side-menu>
+
+	<!-- 右メニュー -->
+	<ion-side-menu side="right">
+	  <!-- ion-pane には style 属性が使える。ページ全体の定義はそこで -->
+	  <ion-pane style="background-color: #262626">
+	    <ion-header-bar class="bar-dark rol">
+			<h1 class="title" style="font-size: 21px;">likes</h1>
+		</ion-header-bar>
+		<ion-content>
+			
+		</ion-content>
+	  </ion-pane>
+	</ion-side-menu>
+
+</ion-side-menus>

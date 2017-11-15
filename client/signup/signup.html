@@ -1,0 +1,15 @@
+<ion-view>
+	<ion-pane>
+		<div id="signup">
+			<h1>Signup</h1>
+			<form name="signupForm" ng-submit="vm.signup()">
+				<input type="email" ng-model="signup.email" placeholder="***@***">
+				<input type="text" ng-model="signup.username" placeholder="waku_97">
+				<input type="password" ng-model="signup.password" placeholder="*****">
+				<input type="text" ng-model="signup.lastname" placeholder="名字">
+				<input type="text" ng-model="signup.firstname" placeholder="名前">
+				<input type="submit" value="signup">
+			</form>
+		</div>
+	</ion-pane>
+</ion-view>
